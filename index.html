@@ -12,7 +12,7 @@
     
    
        
-        <input type="text" class="inp " placeholder="name">
+        <input type="password" class="inp " placeholder="password">
         <button onclick="" id="btn">open</button>
     </div>
    
@@ -24,14 +24,10 @@
  
  var btn=document.getElementById('btn');
   btn.addEventListener('click',()=>{
-     if(n.value==''){
-         var typed=new Typed(".auto-type",{
-         strings:["write your name nigga"],
-         typeSpeed:150,
-         backSpeed:150,
-  looped:true
-     })
-     }else{
+     if(n.value=='ahmed-1-2-3-4-'){
+       
+    
+
          let rn= "stuped " + n.value
    console.log(rn)
  
@@ -50,7 +46,13 @@
          },5000)
 
    
-     }
+     }else{
+          var typed=new Typed(".auto-type",{
+         strings:['this is not the password'],
+         typeSpeed:150,
+         backSpeed:50,
+  looped:true
+     })
     
     
          }
