@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1> <span class= "auto-type"></span></h1>
+    
+   
+       
+        <input type="text" class="inp " placeholder="name">
+        <button onclick="" id="btn">open</button>
+    </div>
+   
+   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+   
+   <script >
+ 
+ let n=document.querySelector('.inp')
+ 
+ var btn=document.getElementById('btn');
+  btn.addEventListener('click',()=>{
+     if(n.value==''){
+         var typed=new Typed(".auto-type",{
+         strings:["write your name nigga"],
+         typeSpeed:150,
+         backSpeed:150,
+  looped:true
+     })
+     }else{
+         let rn= "stuped " + n.value
+   console.log(rn)
+ 
+     
+     var typed=new Typed(".auto-type",{
+         strings:['welcome '+ rn],
+         typeSpeed:150,
+         backSpeed:300,
+  looped:true
+     })
+
+     setTimeout(  function(){
+     location.href="main.html"
+    
+    
+         },5000)
+
+   
+     }
+    
+    
+         }
+
+     
+    
+  )
+  
+     
+   </script> 
+</body>
+</html>
